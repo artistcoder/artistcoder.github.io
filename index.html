@@ -40,13 +40,31 @@
         .tasks{
           border-bottom:1px solid lightgrey;
         }
+        #title-banner{
+          position: relative;
+          text-align: center;
+          padding:0px;
+        }
+        #title-banner-image{
+          width:100%;
+          z-index: 1;
+        }
         #main-title{
-          margin:0px;
+          position: absolute;
+          top: 25%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 2;
         }
         #sub-title{
-          margin:0px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 2;
           font-size: 14px;
           color:rgb(236, 117, 191);
+          z-index: 2;
         }
         #title-art{
           font-family : 'Gloria Hallelujah', cursive;
@@ -85,14 +103,15 @@
   </head>
   
   <body>
-    <div id=title-banner>
+    <div id="title-banner">
+      <img id="title-banner-image" src="img/title_banner.jpg" alt="title sketches">
       <h1 id="main-title"><span id="title-art">art</span>  |  <span id="title-code">Code</span></h1>
       <h4 id="sub-title">Learn. Draw. Capture.</h4>
     </div>
 
     <ul id="navigation-bar">
-      <li><a href="www.google.com" target=_blank>Posts</a></li>
-      <li><a href="www.google.com" target=_blank>Tasks</a></li>
+      <li><a href="./index.html" target=_blank>Posts</a></li>
+      <li><a href="tasks.html" target=_blank>Tasks</a></li>
       <li><a href="www.google.com" target=_blank>About Me</a></li>
     </ul>
 
@@ -103,7 +122,7 @@
       <p class="post-indent">Sketches of Henry, Jesse and me.</p>
       <ul>
       <li>Henry started to use me as leverage to pull himself up; specifically, he grabbed my sternocleidomastoid muscles. A first, for my neck.</li>
-      <li>We went to the first birthday party of a friend. Henry sat next to the birthday boy, and they seemed to be getting along. The birthday boy then
+      <li>We went to the first birthday party of a friend. Henry sat next to the birthday boy, and they seemed to be getting along. Then, the birthday boy 
         suddenly pushed a surprised Henry to the ground. A friendship was formed?</li>
       <li>We often sing "Twinkle Twinkle, Little Star" to Henry at night. One night, he fell asleep on Jesse's shoulder
       after a warm bottle.</li>
