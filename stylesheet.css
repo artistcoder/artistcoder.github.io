@@ -8,11 +8,7 @@ body{
     padding-top:10px;
   }
   
-  #title-banner{
-    border: 1px solid rgb(107, 145, 128);
-    text-align:center;
-    padding: 20px;
-  }
+
   .green-ridge-frame{
     width:40%;
     border: 4px ridge rgb(107, 145, 128);
@@ -30,12 +26,12 @@ body{
     border-bottom:1px solid lightgrey;
   }
   #title-banner{
+    text-align:center;    
     position: relative;
-    text-align: center;
-    padding:0px;
   }
   #title-banner-image{
     width:100%;
+    border: 2px solid rgb(107, 145, 128);
     z-index: 1;
   }
   #main-title{
@@ -44,24 +40,25 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    font-size:60px;
+    margin-bottom: 0px;
   }
   #sub-title{
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    font-size: 14px;
+    font-size: 18px;
     color:rgb(254,67,101);
     z-index: 2;
+    margin-top:10px;
   }
   #title-art{
     font-family : 'Gloria Hallelujah', cursive;
-    font-size: 32px;
   }
   #title-code{
     font-family : monospace;
-    font-size: 32px;
   }
   #navigation-bar{
     list-style-type: none;
