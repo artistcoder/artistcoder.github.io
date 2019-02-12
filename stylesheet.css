@@ -1,22 +1,22 @@
 body{
     font-family: 'Muli', sans-serif;
     margin: 40px;
-    color: rgb(107, 145, 128);
+    color: rgb(57, 80, 70);
   }
   h2{
-    border-top:2px dashed rgb(107, 145, 128);
+    border-top:2px dashed rgb(57, 80, 70);
     padding-top:10px;
   }
   
 
   .green-ridge-frame{
     width:40%;
-    border: 4px ridge rgb(107, 145, 128);
+    border: 4px ridge rgb(57, 80, 70);
     padding: 2px;
   }
   .post{
     background-color:rgb(245, 243, 228);
-    border-bottom: 2px dashed rgb(107, 145, 128);
+    border-bottom: 2px dashed rgb(57, 80, 70);
     padding-top:10px;
   }
   .post-indent{
@@ -31,7 +31,7 @@ body{
   }
   #title-banner-image{
     width:100%;
-    border: 2px solid rgb(107, 145, 128);
+    border: 2px solid rgb(57, 80, 70);
     z-index: 1;
   }
   #main-title{
@@ -65,7 +65,7 @@ body{
     margin: 0px;
     padding: 5px;
     text-align:center;
-    background-color: rgb(107, 145, 128);
+    background-color: rgb(57, 80, 70);
     color:white;
     border: 3px solid white;
   }
