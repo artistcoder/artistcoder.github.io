@@ -41,10 +41,19 @@
       </ol>
       <p>JS/HTML/CSS</p>
       <ol>
+        <li>Methods to find element(s)within webpage: <br>
+          <ul>
+          <li>document.getElementById(id)</li>
+          <li>document.getElementsByClassName(className)</li>
+          <li>document.getElementsByTagName(tagName)</li>
+          <li>document.querySelector(cssSelector)</li>
+          <li>document.querySelectorAll(cssSelector)</li>
+           </ul>
+        </li>
         <li>Enter a CSS selector, and loopable elements are returned (Node List) <br>
           <strong>var <em>X</em> = document.querySelectorAll( <em>"CSS Selector"</em> )</strong>: A</li>
         <li>For loop to change content of items in a Node List (nodeList) <br>
-          <strong>or (var i = 0; i < nodeList.length; i++){ <br>
+          <strong>For (var i = 0; i < nodeList.length; i++){ <br>
           nodeList[i].innerHTML="new content"; <br>
           }</strong>f
         </li>
