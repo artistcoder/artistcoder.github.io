@@ -33,13 +33,13 @@
         <li>Noun: <input type="text" id="madLibNoun"></li>
       </ul>
       <button id="firstButton">Generate the Story!</button>
-      <p>The Story:
-      <span id="firstMadLib"></span>
-      </p>
+      <p>The Story: </p>
+      <p id="firstMadLib"></p>
+   
     </div>
 
 
-    <h2><3</h2>
+    <h2>&lt;3</h2>
     <h5>February 14, 2019</h5>
     <div class=post>
       <p class="post-indent">CSS plus HTML plus JS</p>
@@ -67,7 +67,7 @@
         <li>Enter a CSS selector, and loopable elements are returned (Node List) <br>
           <strong>var <em>X</em> = document.querySelectorAll( <em>"CSS Selector"</em> )</strong>: A</li>
         <li>For loop to change content of items in a Node List (nodeList) <br>
-          <strong>For (var i = 0; i < nodeList.length; i++){ <br>
+          <strong>For (var i = 0; i &lt; nodeList.length; i++){ <br>
           nodeList[i].innerHTML="new content"; <br>
           }</strong>f
         </li>
@@ -115,10 +115,10 @@
      
       var generateStory = function(){
         var madLib = document.getElementById("firstMadLib");
-        var madLibNoun = document.getElementbyID("madLibNoun").value;
+        var madLibNoun = document.getElementById("madLibNoun").value;
         madLib.innerHTML = "this is the story of " + madLibNoun;
       };
-      
+
       firstButton.addEventListener('click', generateStory);
 
     </script>
