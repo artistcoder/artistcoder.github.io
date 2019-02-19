@@ -1,7 +1,7 @@
 body{
     font-family: 'Muli', sans-serif;
     margin: 40px;
-    color: rgb(57, 80, 70);
+    color: rgb(57, 80, 70);    
   }
   h2{
     /* border-top:2px dashed rgb(57, 80, 70); */
@@ -24,6 +24,9 @@ body{
   }
   .tasks{
     border-bottom:1px solid lightgrey;
+  }
+  .no-bullets{
+    list-style-type: none;
   }
   #title-banner{
     text-align:center;    

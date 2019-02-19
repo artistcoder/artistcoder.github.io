@@ -24,10 +24,24 @@
       <li><a href="aboutme.html">About Me</a></li>
     </ul>
 
+
+    <h2>Button Fun</h2>
+    <h5>February 18, 2019</h5>
+    <div class=post>
+      <p class="post-indent"></p>
+      <ul class="no-bullets">
+        <li>Noun: <input type="text" id="madLibNoun"></li>
+      </ul>
+      <button id="firstButton">Generate the Story!</button>
+      <p>The Story:
+      <span id="firstMadLib"></span>
+      </p>
+    </div>
+
+
     <h2><3</h2>
     <h5>February 14, 2019</h5>
     <div class=post>
-       <!-- <img class="green-ridge-frame post-indent" src="img/first_compilation.jpg" alt="first drawing"> -->
       <p class="post-indent">CSS plus HTML plus JS</p>
       <p>Questions:</p>
       <ul>
@@ -64,7 +78,6 @@
     <h2>Me++</h2>
     <h5>February 12, 2019</h5>
     <div class=post>
-       <!-- <img class="green-ridge-frame post-indent" src="img/first_compilation.jpg" alt="first drawing"> -->
       <p class="post-indent">Currently learning beginner Javascript on Khan Academy.</p>
       <p>Questions:</p>
       <ul>
@@ -79,8 +92,8 @@
       <img class="green-ridge-frame post-indent" src="img/first_compilation.jpg" alt="first drawing">
       <p class="post-indent">Sketches of Henry, Jesse and me.</p>
       <ul>
-      <li>Henry started to use me as leverage to pull himself up; specifically, he grabbed my sternocleidomastoid muscles. A first, for my neck.</li>
-      <li>We went to the first birthday party of a friend. Henry sat next to the birthday boy, and they seemed to be getting along. Then, the birthday boy 
+      <li spellcheck="true"> Henry started to use me as leverage to pull himself up; specifically, he grabbed my sternocleidomastoid muscles. A first, for my neck.</li>
+      <li spellcheck="true">We went to the first birthday party of a friend. Henry sat next to the birthday boy, and they seemed to be getting along. Then, the birthday boy 
         suddenly pushed a surprised Henry to the ground. A friendship was formed?</li>
       <li>We often sing "Twinkle Twinkle, Little Star" to Henry at night. One night, he fell asleep on Jesse's shoulder
       after a warm bottle.</li>
@@ -97,6 +110,18 @@
         <li><strong>Code</strong>: Create Task page to capture and accumulate all tasks</li>
       </ol>
     </div>
+    <script>
+      var firstButton = document.getElementById("firstButton");
+     
+      var generateStory = function(){
+        var madLib = document.getElementById("firstMadLib");
+        var madLibNoun = document.getElementbyID("madLibNoun").value;
+        madLib.innerHTML = "this is the story of " + madLibNoun;
+      };
+      
+      firstButton.addEventListener('click', generateStory);
+
+    </script>
   </body>
   
 </html>
