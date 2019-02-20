@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
   <head>
   
@@ -32,11 +32,21 @@
       <p class="post-indent"></p>
       <ul class="no-bullets">
         <li>Noun: <input type="text" id="madLibNoun"></li>
+        <li>First Name: <input type="text" id="madLibFirstName"></li>
+        <li>Verb: <input type="text" id="madLibVerb"></li>
+        <li>Color: <input type="text" id="madLibColor"></li>
+        <li>Adjective: <input type="text" id="madLibAdjective"></li>
+        <li>Adjective: <input type="text" id="madLibAdjective2"></li>
+        <li>Greeting: <input type="text" id="madLibGreeting"></li>
       </ul>
       <button id="firstButton">Generate the Story!</button>
-      <p>The Story: </p>
+      <p>The Story <sup>**</sup>: </p>
       <p id="firstMadLib"></p>
    
+      <sub spellcheck="true">**This story is a madlib of a song that Jesse made for Henry. Jesse was inspired by 'Windy' (The Association).
+        <br><strong>Jesse's verion :</strong> "Who walks around the streets of the city, smiling at everyone that he sees? Who's got big, blue eyes and a cute onesie?
+        Everyone knows it is Henry. Henry has big, blue eyes and Henry has a nice wide smile, and Henry says 'Hello' to everyones he sees"
+      </sub>
     </div>
 
     <!-- POST 3-->
@@ -120,7 +130,13 @@
       var generateStory = function(){
         var madLib = document.getElementById("firstMadLib");
         var madLibNoun = document.getElementById("madLibNoun").value;
-        madLib.innerHTML = "this is the story of " + madLibNoun;
+        var madLibFirstName = document.getElementById("madLibFirstName").value;
+        var madLibVerb = document.getElementById("madLibVerb").value;
+        var madLibColor = document.getElementById("madLibColor").value;
+        var madLibAdjective = document.getElementById("madLibAdjective").value;
+        var madLibAdjective2 = document.getElementById("madLibAdjective2").value;
+        var madLibGreeting = document.getElementById("madLibGreeting").value;
+        madLib.innerHTML = "Who walks around the " + madLibNoun + "s of the city, smiling at everyone s/he " + madLibVerb + "s? Who's got big " + madLibColor + " eyes and a "+ madLibAdjective + " onesie? Everyone knows it is " + madLibFirstName +". " + madLibFirstName + "  has big " + madLibColor + " eyes. " + madLibFirstName + " has a nice " + madLibAdjective2 + " smile and " + madLibFirstName + " says " + madLibGreeting + " to everyone s/he sees. ";
       };
 
       firstButton.addEventListener('click', generateStory);
