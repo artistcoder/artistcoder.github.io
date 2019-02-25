@@ -27,7 +27,7 @@ body{
     list-style-type: none;
   }
   #title-banner{
-    text-align:center;    
+    text-align: center;   
     position: relative;
   }
   #title-banner-image{
@@ -41,7 +41,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    font-size:60px;
+    font-size: 60px;
     margin-bottom: 0px;
   }
   #sub-title{
@@ -85,3 +85,267 @@ body{
     background-color:rgb(254,67,101);
     color:white;
   }    
+
+  /* Post 5 Animation code */
+
+  #backdrop{
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    border: 2px solid rgb(254,67,101);
+    margin: 25px 25px;
+    padding: 30px 0 0;
+    position: relative;
+  }
+  /* GUY */
+
+  /* head and mouth are rectangles that are being positioned
+  based on the top left corner (rounded) */
+
+  #guyHead{
+    width: 30px;
+    height: 30px;
+    background: white;
+    border: 1px solid black;
+    border-radius:50%;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+  }
+  #guyEyes{
+    width: 15px;
+    height: 5px;
+    border-right: 2px solid black;
+    border-left:2px solid black;
+    position: absolute;
+    top: 210px;
+    left: 57px;
+    z-index: 1;
+  }
+  #guyMouth{
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    border-radius:50%;
+    position: absolute;
+    animation: sadMouth 10s linear infinite;
+  }
+  #guyHair{
+    position: absolute;
+    animation: hairMove 10s linear infinite;
+   
+  }
+  #guyBod{
+    height: 50px;
+    background: transparent;
+    border-left: 1px solid black;
+    position: absolute;
+    top: 231px;
+    left: 65px;
+  } 
+  #guyLLeg{
+    height: 20px;
+    background: transparent;
+    border: .5px solid black;
+    position: absolute;
+    top: 281px;
+    left: 59px;
+    transform:skew(330deg);
+
+  }
+  #guyRLeg{
+    height: 20px;
+    background: transparent;
+    border: .5px solid black;
+    position: absolute;
+    top: 281px;
+    left: 71px;
+    transform:skew(30deg);
+
+    /* transform: rotate(150deg); */
+  }
+  #guyRArm{
+    height: 15px;
+    background: transparent;
+    border: .5px solid black;
+    position: absolute;
+    top: 248px;
+    left: 69.5px;
+    transform:skew(330deg);
+  }
+  #guyLArm{
+    height: 15px;
+    background: transparent;
+    border: .5px solid black;
+    position: absolute;
+    top: 248px;
+    left: 60.5px;
+    transform:skew(30deg);
+  }
+
+  #sun{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 15px;
+    left: 325px;
+    border-radius: 50%;
+    background-color:yellow;
+    border: 1px solid gold;
+    box-shadow: 0 0 10px 8px gold;
+  }
+
+  #ground{
+    position: absolute;
+    height: 30px;
+    width: 400px;
+    background-color: green;
+    top: 300px;
+    left: 0px;
+  }
+  #flagPole{
+    position: absolute;
+    height: 180px;
+    border:3px solid darkgrey;
+    left: 200px;
+    top: 115px;
+  }
+  #sadFlag{
+    position: absolute;
+    top: 115px;
+    left: 205px;
+    animation: flagMove 10s linear infinite;
+  }
+  #flagSmile{
+    width: 25px;
+    height: 15px;
+    border-bottom: 8px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 133px;
+    left: 224px;
+    z-index: 1;
+  }
+  #cloud1{
+    position: absolute;
+    top: 10px;
+    /* left: 10px; */
+    height: 90px;
+    width: 90px;
+    animation: moveAcross 10s linear infinite;
+    z-index: 1;
+  }
+  #cloud2{
+    position: absolute;
+    top: 10px;
+    /* left: 10px; */
+    height: 100px;
+    width: 100px;
+    animation: moveAcross2 10s linear infinite;
+    z-index: 1;
+  }
+
+
+
+  @keyframes moveAcross {
+    0% {
+      left: 0%;
+    }
+    100% {
+      left: 310px;
+    }
+  }
+  @keyframes moveAcross2 {
+    0% {
+      left: 0%;
+    }
+    100% {
+      left: 150px;
+    }
+  }
+  @keyframes sadMouth {
+    0% {
+      top: 210px;
+      left: 60px;
+      border-bottom: 2px solid red;
+      }
+   25% {
+      top: 220px;
+      left: 60px;
+      border-top: 2px solid red;
+      border-bottom: 2px solid transparent;
+    }
+    100% {
+      top: 220px;
+      left: 60px;
+      border-top: 2px solid red;
+      border-bottom: 2px solid transparent;
+    }
+  }
+
+  @keyframes flagMove{
+    0%{
+      border-top: 50px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-left: 20px solid orangered;
+      height: 0px;
+      width: 0px;
+    }
+    5%{
+      border-top: 50px solid orangered;
+      border-bottom: 30px solid orangered;
+      border-left: 20px solid orangered;
+      background-color: orangered;
+      height: 0px;
+      width: 0px;
+    }
+    40%{
+      border-top: 1px solid orangered;
+      border-bottom: 1px solid orangered;
+      border-left: 1px solid orangered;
+      border-right: 1px solid orangered;
+      background-color: orangered;
+      height: 50px;
+      width: 60px;
+    }
+    100%{
+      border-top: 1px solid orangered;
+      border-bottom: 1px solid orangered;
+      border-left: 1px solid orangered;
+      border-right: 1px solid orangered;
+      background-color: orangered;
+      height: 50px;
+      width: 60px;
+    }
+  }
+
+  @keyframes hairMove{
+    0%{
+      top: 200px;
+      left: 46px;
+      width: 30px;
+      height: 30px;
+      border-radius:50%;
+      border-top: 7px solid brown;
+      border-left: 6px solid brown;
+      border-right: 6px solid brown;
+    }
+    /* 50%{
+      top: 200px;
+      left: 48px;
+      width: 50px;
+      height: 5px;
+      border-top: 7px solid brown;
+      border-left: 6px solid brown;
+      border-right: 6px solid brown;
+    } */
+    100%{
+      top: 200px;
+      left: 48px;
+      width: 50px;
+      height: 5px;
+      border-top: 7px solid brown;
+      border-left: 6px solid brown;
+      border-right: 6px solid brown;
+    }
+  }

@@ -24,11 +24,40 @@
       <li><a href="aboutme.html">About Me</a></li>
     </ul>
 
+
+    <!-- POST 5 (ANIMATION!!) -->
+
+    <h2>flags love wind</h2>
+    <h5>February 22, 2019</h5>
+    <div class="post">
+      <p class="post-indent"> On a windy day, please remember: </p>
+      <div id="backdrop">
+        <img id="cloud1" src="http://chittagongit.com//images/white-cloud-icon-png/white-cloud-icon-png-8.jpg" alt= "black cloud">
+        <img id="cloud2" src="http://chittagongit.com//images/white-cloud-icon-png/white-cloud-icon-png-8.jpg" alt= "black cloud">
+        <div id="sun"></div>
+        <div id="guyHead"></div>
+        <div id="guyMouth"></div>
+        <div id="guyBod"></div>
+        <div id="guyRLeg"></div>
+        <div id="guyLLeg"></div>
+        <div id="guyRArm"></div>
+        <div id="guyLArm"></div>
+        <div id="guyHair"></div>
+        <div id="guyEyes"></div>
+        <div id="ground"></div>
+        <div id="girlMouth"></div>
+        <div id="flagEyes"></div>
+        <div id="flagSmile"></div>
+        <div id="flagPole"></div>
+        <div id="sadFlag"></div>
+      </div>
+    </div>
+
     <!-- POST 4-->
 
     <h2>Button Fun</h2>
     <h5>February 18, 2019</h5>
-    <div class=post>
+    <div class="post">
       <p class="post-indent"> Complete the text boxes in the form below and then hit the button: </p>
       <ul class="no-bullets">
         <li>Noun: <input type="text" id="madLibNoun"></li>
@@ -45,7 +74,7 @@
    
       <sub class="post-indent" spellcheck="true">**This story is a madlib of a song that Jesse made for Henry. Jesse was inspired by 'Windy' (The Association).
         <br><strong class="post-indent">Jesse's version :</strong> "Who walks around the streets of the city, smiling at everyone that he sees? Who's got big, blue eyes and a cute onesie?
-        Everyone knows it is Henry. Henry has big, blue eyes and Henry has a nice wide smile, and Henry says 'Hello' to everyones he sees"
+        Everyone knows it is Henry. Henry has big, blue eyes and Henry has a nice, wide smile, and Henry says 'Hello' to everyones he sees."
       </sub>
     </div>
 
@@ -53,7 +82,7 @@
 
     <h2>&lt;3</h2>
     <h5>February 14, 2019</h5>
-    <div class=post>
+    <div class="post">
       <p class="post-indent">CSS plus HTML plus JS</p>
       <p>Questions:</p>
       <ul>
@@ -88,9 +117,10 @@
     </div>
 
     <!-- POST 2-->
+
     <h2>Me++</h2>
     <h5>February 12, 2019</h5>
-    <div class=post>
+    <div class="post">
       <p class="post-indent">Currently learning beginner Javascript on Khan Academy.</p>
       <p>Questions:</p>
       <ul>
@@ -100,9 +130,10 @@
     </div>
 
     <!-- POST 1-->
+
     <h2>The Beginning</h2>
       <h5>February 8, 2019</h5>
-      <div class=post>
+      <div class="post">
       <img class="green-ridge-frame post-indent" src="img/first_compilation.jpg" alt="first drawing">
       <p class="post-indent">Sketches of Henry, Jesse and me.</p>
       <ul>
@@ -125,8 +156,9 @@
       </ol>
     </div>
     <script>
+
+      //POST 4 Button Fun/Mad lib code
       var firstButton = document.getElementById("firstButton");
-     
       var generateStory = function(){
         var madLib = document.getElementById("firstMadLib");
         var madLibNoun = document.getElementById("madLibNoun").value;
@@ -138,7 +170,6 @@
         var madLibGreeting = document.getElementById("madLibGreeting").value;
         madLib.innerHTML = "Who walks around the " + madLibNoun + "s of the city, smiling at everyone s/he " + madLibVerb + "s? Who's got big " + madLibColor + " eyes and a "+ madLibAdjective + " onesie? Everyone knows it is " + madLibFirstName +". " + madLibFirstName + "  has big " + madLibColor + " eyes. " + madLibFirstName + " has a nice " + madLibAdjective2 + " smile and " + madLibFirstName + " says " + madLibGreeting + " to everyone s/he sees. ";
       };
-
       firstButton.addEventListener('click', generateStory);
 
     </script>
