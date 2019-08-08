@@ -15,7 +15,7 @@ body{
   .post{
     background-color:rgb(245, 243, 228);
     border-bottom: 2px dashed rgb(57, 80, 70);
-    padding-top:10px;
+    padding-top:10px; 
   }
   .post-indent{
     margin:10px;
